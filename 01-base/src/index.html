@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Work+Sans:wght@300;400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/main.scss" />
+    <title>layout-base</title>
+  </head>
+  <body>
+    <h1 class="title">LAYOUT MÓDULO 1. EJERCICIO BASE</h1>
+    <hr />
+    <main class="main">
+      <section class="section">
+        <p>Ejercio 1: Crear una paleta de colores dinámica</p>
+        <div class="container">
+          <div class="box darken-4"><span class="color-text-box">darken 4</span></div>
+          <div class="box darken-3"><span class="color-text-box">darken 3</span></div>
+          <div class="box darken-2"><span class="color-text-box">darken 2</span></div>
+          <div class="box darken-1"><span class="color-text-box">darken 1</span></div>
+          <div class="box base"><span class="color-text-box">base color</span></div>
+          <div class="box ligthen-1"><span class="color-text-box">ligthen 1</span></div>
+          <div class="box ligthen-2"><span class="color-text-box">ligthen 2</span></div>
+          <div class="box ligthen-3"><span class="color-text-box">ligthen 3</span></div>
+          <div class="box ligthen-4"><span class="color-text-box">ligthen 4</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <p>Ejercicio 2: Crear dos temas distintos y mostrar los resultados en una página</p>
+        <div class="theme">
+          <div class="theme-container">
+            <div class="theme-box base">Base</div>
+            <div class="theme-box important">important</div>
+            <div class="theme-box warning">Warning</div>
+          </div>
+          <div class="theme-container">
+            <p class="primary-font">Principal font</p>
+            <p class="secondary-font">Secondary font</p>
+            <div class="theme-box box-shadow">Box with shadow</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <p>Ejercicio 3: Crear la barra de navegación usando FlexBox</p>
+        <header class="header">
+          <div class="header-title">Lemoncode</div>
+          <nav class="header-nav">
+            <ul class="nav-list">
+              <li class="nav-list-item">Home</li>
+              <li class="nav-list-item">Blog</li>
+              <li class="nav-list-item">Activities</li>
+              <li class="nav-list-item">About me</li>
+            </ul>
+          </nav>
+        </header>
+      </section>
+
+      <section class="section">
+        <p>Ejercicio 4: Crear un elemento de tipo card con Grid CSS</p>
+        <article class="card">
+          <div class="img-container">
+            <img class="img" src="./styles/images/img.jpg" alt="Imagen tarjeta" />
+          </div>
+          <h3 class="card-title">Title</h3>
+          <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis consequatur, modi dolores iusto sint sapiente maxime debitis? Illo quas doloribus beatae quidem minus corporis soluta ipsa dicta molestias! Modi, commodi.</p>
+          <p class="card-date">Publisehd: <span class="date">March 20, 2020</span></p>
+          <button class="btn">More info</button>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

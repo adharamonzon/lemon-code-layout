@@ -1,0 +1,22 @@
+$base-color: #00C9E8;
+
+//theme A
+  //color
+$A-color-text: white;
+  //font
+$A-primary-font: 'Montserrat', sans-serif;
+$A-secondary-font:'Work Sans', sans-serif;
+
+//theme B
+  //color
+$B-color-text: black;
+  //font
+$B-primary-font: 'Times New Roman', Times, serif;
+$B-secondary-font: 'Poppins', sans-serif;
+
+@mixin themeBox {
+  width: 110px;
+  height: 70px;
+  padding: 10px;
+  border: solid 1px black;
+}

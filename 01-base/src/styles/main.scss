@@ -1,0 +1,149 @@
+@import './variables.scss';
+@import './themes/themeA';
+//@import './themes/themeB';
+@import './media-queries';
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.title {
+  margin: 15px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  margin: 30px;
+}
+
+//Ejercicio 1
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  .box {
+    @include themeBox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(149, 149, 149);
+    background-color: $base-color ;
+   }
+   .darken-1 {
+    background-color: darken($base-color, 10);
+  } 
+  .darken-2 {
+     background-color: darken($base-color, 20);
+  }
+  .darken-3 {
+    background-color: darken($base-color, 30);
+  }
+  .darken-4 {
+    background-color: darken($base-color, 40);
+  }
+  .ligthen-1{
+    background-color: lighten($base-color, 10);
+  }
+  .ligthen-2{
+    background-color: lighten($base-color, 20);
+  }
+  .ligthen-3{
+    background-color: lighten($base-color, 30);
+  }
+  .ligthen-4{
+    background-color: lighten($base-color, 40);
+  } 
+}
+
+//Ejercicio 2
+
+.theme {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  align-items: center;
+  .theme-container {
+    margin: 20px;
+  }
+}
+
+//Ejercicio 3
+
+.header {
+  margin-top: 30px;
+  .header-title {
+    font-family: $A-primary-font;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 20px;
+  }
+  .header-nav {
+    background-color: rgb(38, 135, 149);
+    .nav-list{
+      display: flex;
+      justify-content: space-around;
+      list-style-type: none;
+      .nav-list-item {
+        color:white;
+        font-family: $A-primary-font;
+        padding: 15px;
+        cursor: pointer;
+        &:hover{
+          background-color: rgb(95, 95, 95);
+        }
+      }
+    }
+  }
+}
+
+//Ejercicio 4
+
+.card {
+  width: 400px;
+  margin: 40px 10px;
+  padding: 20px 0;
+  display: grid;
+  grid-template-rows: 250px 50px 150px 50px 50px;
+  grid-template-columns: 400px;
+  align-items: center;
+  background-color: rgb(193, 191, 191);
+ 
+  .img-container {
+    width: 350px;
+    height: auto;
+    justify-self: center;
+    .img {
+      width: 100%;
+    }
+  }
+  .card-title {
+    margin-left: 15px;
+  }
+  .card-text {
+    margin: 0 15px;
+  }
+  .card-date {
+    text-align: right;
+    margin-right: 15px;
+    .date{
+      color: rgb(98, 97, 97);
+    }
+  }
+  .btn{
+    height: 35px;
+    width: 300px;
+    justify-self: center;
+    background-color: rgb(44, 154, 99);
+    color: white;
+    border: none;
+  }
+}

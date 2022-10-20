@@ -1,0 +1,35 @@
+.theme-box {
+  border-radius: 5px;
+  font-family: $B-primary-font;
+}
+.base { 
+  @include themeBox;
+  background-color: blue;
+  color: $A-color-text;
+}
+.important { 
+  @include themeBox;
+  background-color: darkblue;
+  color: $A-color-text;
+}
+.warning { 
+  @include themeBox;
+  background-color: aquamarine;
+  color: $A-color-text;
+}
+.primary-font{
+  font-family: $B-primary-font;
+  font-size: 2rem;
+}
+.secondary-font {
+  font-family: $B-secondary-font;
+  font-size: 1rem;
+}
+.box-shadow{
+  border: solid 2px black;
+  height: 120px;
+  width: 120px;
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 10px 10px 5px 1px rgba(black, 0.7);
+}
